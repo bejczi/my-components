@@ -1,0 +1,42 @@
+/* ==== A SIMPLE CSS RESET FROM ERIC MEYER ==== 
+a html-be ágyazva*/
+/*A böngészők saját stílusainak semlegesítése*/
+* {
+  box-sizing: border-box;
+}
+/* ==== GENERAL STYLES ==== */
+footer {
+  background: url('https://orange.codeberryschool.com/content/images/project-assets/simple-footer.png') repeat center;
+  display: table; /*táblázatos kialakítás*/
+  width: 100vw; /*vertikális igazítás*/
+  height: 8rem; /* a footer vastagsága */
+  text-align: center; /*horizontálisan középen*/
+  padding: 1rem; /*tartalom körüli méret*/
+  font-family: 'Arial', sans-serif;
+  font-size: .875rem;
+}
+
+.wrapper { /*ez is a táblázatos elrendezhez kell*/
+  display: table-cell;
+  vertical-align: middle;
+}
+footer small {
+  color: #ccc;
+  letter-spacing: .025rem;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.footer-nav a {
+  text-decoration: none; /*az alapértelemezett díszítő elemek eltávolítása*/
+  color: #c74f78;
+  margin: 0 .5rem;
+  display: inline-block;
+}
+.footer-nav a:hover {
+  color: #f26896;
+  transition: color .15s ease-in-out;
+}
+strong {
+  font-weight: 700;
+}

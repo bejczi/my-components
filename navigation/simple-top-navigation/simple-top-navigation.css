@@ -1,0 +1,59 @@
+/* ==== GENERAL STYLES ==== */
+/*A CSS reset a html-be ágyazva, külső forrásból*/
+* {
+  box-sizing: border-box;
+}
+/* ==== A SIMPLE TOP NAVIGATION ==== */
+
+nav {
+  font-size: 0;/* a köztes szóközök nem foglalnak helyet.*/
+}
+nav ul {
+  background-color: #eee;
+  text-align: center;
+}
+nav li {
+  font-family: 'Anton', sans-serif;
+  font-size: 1.4rem;
+  line-height: 3rem;
+  height: 3rem;
+  border-bottom: 1px solid #ccc;
+}
+nav a {
+  text-decoration: none; /*megfosztja a linkeket a kék, aláhúzott megjelenésüktől.*/
+  color: #C74F78;
+  display: block; /*az anchor elemek kitöltik az li tageket.*/
+}
+nav a:hover {
+  background-color: #fff;
+  transition: background-color .3s ease-in-out;
+}
+nav a.active {
+  background-color: #c74f78;
+  color: #eee;
+}
+/* ==== Media Query ==== */
+/*A leggyakrabban használt törési pontok (min-width: 320px, 480px, 768px, 992px és 1200px) azok, amelyek a Bootstrap nevű keretrendszerben használatosak. */
+@media (min-width: 600px) {
+
+  nav li {
+    display: inline-block;
+    border-bottom: none;
+    width: 7.5rem;
+  }
+
+}
+@media (min-width: 768px) {
+
+	nav li {
+      /*later*/
+  }
+
+}
+@media (min-width: 1025px) {
+
+	nav li {
+      /*later*/
+  }
+
+}

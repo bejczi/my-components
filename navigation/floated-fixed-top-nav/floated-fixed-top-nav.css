@@ -1,0 +1,64 @@
+﻿* ==== GENERAL STYLES ==== */
+* {
+  box-sizing: border-box;
+}
+/* ==== A SIMPLE TOP NAVIGATION ==== */
+nav {
+  background-color: rgba(0,0,0,.9);
+  padding: 1rem;
+}
+nav a {
+  text-decoration: none;
+  font-family: 'Space Mono', monospace;
+  text-align: center;
+  color: #fff;
+  display: block;/*Ennek köszönhetően az anchor elemek kitöltik az li tageket. Ez megnöveli a kattintható terület méretét a teljes szélességre és magasságra, így könnyebb ráklikkelni a navigációs linkekre.*/
+  padding: .5rem 1rem;
+}
+.sign-up {
+  border: 1px solid hsla(0,0%,100%,.2);
+  border-radius: 9999px;
+}
+nav a:hover {
+  color: hsl(0, 0%, 77%);
+  transition: color .15s ease-in-out;
+}
+.sign-up:hover {
+  color: #000;
+  background-color: #fff;
+  transition: background-color .15s ease-in-out;
+}
+/*Tablet and desktop size*/
+@media (min-width: 768px) {
+
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  nav a {
+    float: right;
+  }
+
+  .home {
+    float: left;
+  }
+  /* Clearfix */
+    nav::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  body {
+    width: 60%;
+    margin: 5.25rem auto 1.25rem; /* Add a top margin to avoid content overlay */
+  }
+
+}
+p {
+  margin-bottom: 1.25rem;
+  padding: .5rem;
+}
+
+

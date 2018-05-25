@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="A ragadós footer - A verzió - Az abszolút pozíció megoldás">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>A ragadós footer - Az abszolút pozíció megoldás</title>
+</head>
+<body>
+  <div class="wrapper">
+    <main class="content">
+      <h1>Az abszolút pozíció megoldás</h1>
+      <span>A position tulajdonság változtatása az egyik mód arra, hogy a footert a lap aljára helyezd. Négy egyszerű lépésre lesz szükséged:
+<ol>
+  <li>Csomagolj mindent (a footert is beleértve) egy divbe.</li>
+  <li>Célozd meg ezt a csomagolót (wrapper), és állítsd a minimális magasságát 100vh-ra, illetve alkalmazd rá a position: relative; szabályt.</li>
+  <li>Utána célozd meg a footert magát, és állítsd a pozícióját absolute-ra, majd mozgasd a wrapper aljára.</li>
+   <li>A wrappernek adj egy alsó paddinget, ez legyen egyenlő a footer magasságával, hogy a tartalom ne csússzon be a footer alá.</li>
+</ol>
+Figyeld meg, hogy a footernek muszáj megadnod egy szélességet, miután megváltoztattad a pozíciójának alapértelmezett értékét, különben nem tölti ki a viewportot.<br>
+Ennek a megközelítésnek az egyetlen hibája, hogy pontosan tudnod kell a footer magasságát. Ez a legtöbb esetben nem nagy dolog, csak tudj róla, ha ezt a megoldást választod.
+</span>
+    </main>
+    <footer class="footer">
+      <span>footer</span>
+    </footer>
+  </div>
+</body>
+</html>
